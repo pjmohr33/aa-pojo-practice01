@@ -10,8 +10,10 @@ restSum(0); // => 0
 ***********************************************************************/
 
 function restSum(...otherNums) {
-  // Your code here
-}
+  return otherNums.reduce((acc, cur) => {
+    return acc + cur;
+  }, 0);
+};
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = restSum;
